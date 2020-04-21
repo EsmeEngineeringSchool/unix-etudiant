@@ -1,5 +1,5 @@
 c=0                          
-function carre               
+carre()
 {                            
     a=$1                     
     c=$(($a*$a))             
