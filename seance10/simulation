@@ -1,0 +1,27 @@
+#!/bin/bash
+
+SECONDS=0
+i=0
+while [ ${i} -lt 1000 ];
+do
+    r=$RANDOM
+    echo iter : ${i}  value = ${r} "       Elapsed Time (s) : $SECONDS" 
+    if [ ${r} -gt 20000 ]
+    then
+        s=1
+    elif [ ${r} -gt 10000 ] && [ ${r} -lt 20000 ]
+    then
+        s=2
+    elif [ ${r} -gt 5000 ] && [ ${r} -lt 10000 ]
+    then
+        s=3
+    elif [ ${r} -gt 1000 ] && [ ${r} -lt 5000 ]
+    then
+        s=10
+    else
+        s=20
+    fi
+    sleep ${s} 
+    i=$((i+1))
+done
+times
