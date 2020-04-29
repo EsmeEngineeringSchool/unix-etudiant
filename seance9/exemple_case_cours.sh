@@ -1,5 +1,4 @@
 #!/bin/bash
-
 case $1 in
 "lundi")
     echo "$1 c'est comme un $1 !";;
