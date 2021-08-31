@@ -1,0 +1,9 @@
+# scripts pour générer certains fichiers
+seance03/*.py
+
+# fichiers solutions (à ne pas partager avec les étudiants dans un premier temps)
+seance07/solution*
+
+seance08/fact
+seance08/carte
+seance08/solution_td-exo2.sh
