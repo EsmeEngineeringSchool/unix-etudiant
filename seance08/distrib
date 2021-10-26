@@ -1,0 +1,21 @@
+#!/bin/bash
+cartes=()
+while [ "${#cartes[@]}" -lt 5 ]
+do
+#    echo "${#cartes[@]}"
+    c=$(./carte)
+    ajout=0
+    for carte in "${cartes[@]}"
+    do
+        if [ "${c}" == "${carte}" ]
+        then 
+            ajout=1
+        fi
+#        echo ${carte} ${c} ${ajout}
+    done
+    if [ "${ajout}" -eq 0 ] 
+    then
+        cartes+=("${c}")
+    fi
+done
+echo ${cartes[@]}
