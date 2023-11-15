@@ -1,21 +1,29 @@
 #!/bin/bash
-cartes=()
-while [ "${#cartes[@]}" -lt 5 ]
+
+# main est un tableau de 5 cartes
+main=()
+# tant qu'il n'y a pas 5 cartes
+while [ ${#main[@]} -lt 5 ] 
 do
-#    echo "${#cartes[@]}"
-    c=$(./carte)
-    ajout=0
-    for carte in "${cartes[@]}"
+    #tire une carte aléatoirement (calea)
+    calea=$(./carte)
+    #par défaut on la garde
+    garder=true
+    #on va regarder toutes les cartes dans main
+    #et les comparer à calea
+    for c in "${main[@]}"
     do
-        if [ "${c}" == "${carte}" ]
-        then 
-            ajout=1
+        if [ "${c}" == "${calea}" ]
+        then
+            #si elle est présente dans main
+            #on ne garde pas la carte
+            garder=false
         fi
-#        echo ${carte} ${c} ${ajout}
     done
-    if [ "${ajout}" -eq 0 ] 
+    # si on garde on ajoute à main
+    if [ "${garder}" == true ] 
     then
-        cartes+=("${c}")
+        main+=("$calea")
     fi
-done
-echo ${cartes[@]}
+done 
+echo ${main[@]}
