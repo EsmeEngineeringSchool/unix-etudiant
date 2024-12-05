@@ -12,6 +12,6 @@ int main(void)
     for (int i =0;i<n;i++)
     {
         // fonction d'affichage de chaines de caractères
-        printf("i = %d",i)
+        printf("i = %d",i);
     }
 }
