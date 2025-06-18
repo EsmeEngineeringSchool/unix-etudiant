@@ -1,0 +1,10 @@
+Je sousigné __nom__, demeurant au chemin absolue __adresse__,
+certifie que mes droits d'accès pour le fichier "__fichier__" 
+sont autorisés par l'admnistrateur système en application 
+de l'article 3 du décret de chmod.
+
+__bor__ autoriser à lire      'r'
+__bow__ autoriser à écrire    'w'
+__box__ autoriser à éxécuter  'x'
+
+
