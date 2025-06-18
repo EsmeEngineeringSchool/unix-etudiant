@@ -10,9 +10,9 @@ Vous y trouverez :
 
 Clonez ce dépôt sur votre machine :
 
-\`\`\`bash
+```bash
 git clone https://github.com/EsmeEngineeringSchool/unix-etudiant.git
-\`\`\`
+```
 
 ## Licence
 
