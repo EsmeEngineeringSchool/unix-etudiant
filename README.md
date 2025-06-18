@@ -10,12 +10,12 @@ Vous y trouverez :
 
 Clonez ce dépôt sur votre machine :
 
-\`\`\`bash
+```bash
 git clone https://github.com/EsmeEngineeringSchool/unix-etudiant.git
-\`\`\`
+```
 
 ## Licence
 
 Ce dépôt est distribué sous licence **Creative Commons BY-NC-SA 4.0**.  
-Vous pouvez l'utiliser et l'adapter à des fins non commerciales en citant l'auteur original.
+
 
