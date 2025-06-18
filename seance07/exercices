@@ -1,3 +1,0 @@
-* créer l'ensemble des repertoires dénommés rep[1-9] 
-* compter le nombre de fichiers de suffixe *.conf dans /etc/
-* compter le nombre de fichiers de suffixe *.h présent dans un repertoire passé en paramètre

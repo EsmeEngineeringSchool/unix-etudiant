@@ -1,4 +1,5 @@
 #!/bin/bash
+
 SECONDS=0
 i=0
 while [ ${i} -lt 1000 ];
